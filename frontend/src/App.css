@@ -1,0 +1,257 @@
+/* Estilo base y fondo */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.App {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 40px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Título */
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de la calculadora */
+.calculator-card {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de modo oscuro */
+.content-btnMode {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+/* Grupo de inputs */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Estilo de inputs y selects */
+input,
+select {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px #007bff;
+}
+
+/* Contenedor del botón calcular */
+.content-btnCalcular {
+  display: flex;
+  justify-content: center;
+}
+
+/* Botón calcular */
+.calculate-btn {
+  background-color: #1c58c7;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.calculate-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Resultado */
+.result {
+  font-size: 1.4rem;
+  color: #000000;
+  margin-top: 20px;
+}
+
+/* Error */
+.error {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Toggle switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.slider .icon {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-switch input:checked + .slider .icon {
+  transform: translateX(40px);
+}
+
+/* Estilo para modo oscuro */
+.dark-mode .toggle-switch input:checked + .slider {
+  background-color: #000000;
+  border-color: #ccc;
+}
+
+.dark-mode,
+.dark-mode body,
+.dark-mode #root {
+  background-color: #000;
+}
+
+.dark-mode h1,
+.dark-mode h2 {
+  color: #ccc;
+}
+
+.dark-mode .calculator-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  border: 1px solid #333;
+}
+
+.dark-mode .btnMode {
+  color: #f8f9fa;
+  border-color: #888;
+}
+
+.dark-mode input,
+.dark-mode select {
+  background-color: #2c2c2c;
+  color: #f8f9fa;
+  border: 1px solid #555;
+}
+
+.dark-mode input:focus,
+.dark-mode select:focus {
+  border-color: #fff;
+  box-shadow: 0 0 5px #fff;
+}
+
+.dark-mode .calculate-btn {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(249, 255, 253, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dark-mode .calculate-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsividad */
+@media (max-width: 500px) {
+  .calculator-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .calculate-btn {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+
+  input,
+  select {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .slider {
+    width: 60px;
+    height: 26px;
+  }
+
+  .slider .icon {
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+    top: 2px;
+    left: 2px;
+  }
+
+  .toggle-switch input:checked + .slider .icon {
+    transform: translateX(34px);
+  }
+
+  .input-group {
+    gap: 10px;
+  }
+
+  .content-btnMode {
+    justify-content: center;
+  }
+}

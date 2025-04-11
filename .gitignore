@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+.env
+
+# Node / React
+node_modules/
+build/
+.env
+
+# General
+.DS_Store
+*.swp

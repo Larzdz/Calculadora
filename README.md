@@ -1,19 +1,15 @@
 
 # 🧮 Calculadora con Django + React
 
-<table align="center">
-  <tr >
-    <td align="center">
-      <img src="https://res.cloudinary.com/dry8bdxce/image/upload/v1748920500/calculadoraLigthMode_ctlovk.png" width="500px" alt="Captura 1" /><br />
-      <em>Captura de pantalla del proyecto Calculadora Light</em>
-    </td>
-    <td align="center">
-      <img src="https://res.cloudinary.com/dry8bdxce/image/upload/v1748920500/calculadoraDarkMode_eavu6h.png" width="500px" alt="Captura 2" /><br />
-      <em>Captura de pantalla del proyecto Calculadora Dark</em>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://res.cloudinary.com/dry8bdxce/image/upload/v1748920500/calculadoraLigthMode_ctlovk.png" width="45%" alt="Captura 1" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://res.cloudinary.com/dry8bdxce/image/upload/v1748920500/calculadoraDarkMode_eavu6h.png" width="45%" alt="Captura 2" />
+</p>
 
+<p align="center">
+  <em>Capturas de pantalla del proyecto Calculadora Light/Dark</em>
+</p>
 
 ---
 

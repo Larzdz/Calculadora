@@ -2,9 +2,9 @@
 # 🧮 Calculadora con Django + React
 
 <p align="center">
-  <img src="https://res.cloudinary.com/dry8bdxce/image/upload/v1748920500/calculadoraLigthMode_ctlovk.png" width="45%" alt="Captura 1" />
+  <img src="https://res.cloudinary.com/dry8bdxce/image/upload/v1748923125/calculadoraLigthMode_ctlovk.png" width="45%" alt="Captura 1" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://res.cloudinary.com/dry8bdxce/image/upload/v1748920500/calculadoraDarkMode_eavu6h.png" width="45%" alt="Captura 2" />
+  <img src="https://res.cloudinary.com/dry8bdxce/image/upload/v1748923114/calculadoraDarkMode_eavu6h.png" width="45%" alt="Captura 2" />
 </p>
 
 <p align="center">

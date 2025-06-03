@@ -12,6 +12,7 @@
 </p>
 
 ---
+## 📝 Descripción 
 
 Este es un proyecto de calculadora web creada con Django (backend) y React (frontend). Incluye funcionalidades como:
 
@@ -64,14 +65,6 @@ npm start
 
 ---
 
-## 📌 Código principal
+## 📄 Licencia
+Este proyecto es de uso personal y educativo.
 
-- **Backend** → `views.py` usa `APIView` para recibir, procesar y devolver los resultados.
-- **Frontend** → `App.js` contiene el formulario de entrada, manejo de resultados y estado.
-- **Estilos** → `App.css` incluye modo claro/oscuro, transiciones y diseño responsivo.
-
----
-
-## 👤 Desarrollado por
-
-[Larz]
